@@ -7,21 +7,38 @@ end
 
 ruby '2.3.3'
 
+# learn-rails
+#gem 'activerecord-tableless', '~> 1.3'
+gem 'compass-rails', '~> 3.0', '>= 3.0.2'
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+gem 'gibbon', '~> 3.2'
+gem 'google_drive', '~> 2.1', '>= 2.1.6'
+gem 'high_voltage', '~> 3.0'
+gem 'simple_form', '~> 3.5'
+gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
+
+group :development do
+  gem 'better_errors', '~> 2.4'
+  #gem 'quiet_assets' #, '~> 1.1'
+  gem 'rails_layout', '~> 1.0', '>= 1.0.41'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+#gem 'railties', '~> 5.1', '>= 4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails' #, '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.2'
+gem 'coffee-rails' #, '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -44,24 +61,8 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console' #, '>= 3.3.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-# learn-rails
-gem 'activerecord-tableless'
-gem 'compass-rails', '~> 2.0.alpha.0'
-gem 'figaro'
-gem 'gibbon'
-gem 'google_drive'
-gem 'high_voltage'
-gem 'simple_form'
-gem 'zurb-foundation'
-
-group :development do
-  gem 'better_errors'
-  gem 'quiet_assets'
-  gem 'rails_layout'
-end

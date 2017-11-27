@@ -16,6 +16,9 @@ gem 'google_drive', '~> 2.1', '>= 2.1.6'
 gem 'high_voltage', '~> 3.0'
 gem 'simple_form', '~> 3.5'
 gem 'zurb-foundation', '~> 4.3', '>= 4.3.2'
+gem 'simple'
+gem 'rack', '~> 2.0', '>= 2.0.3'
+#gem 'rack', '~> 1.4.1'
 
 group :development do
   gem 'better_errors', '~> 2.4'
